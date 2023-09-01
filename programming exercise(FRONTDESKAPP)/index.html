@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front Desk App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Create a New Storage Customer</h1>
+    <form id="customerForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required><br>
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="text" id="phoneNumber" required><br>
+
+        <button type="button" id="createCustomerBtn">Create Customer</button>
+
+        <label id="newUser"></label>
+    </form>
+
+    
+    <h1>Check Storage Area Availability</h1>
+
+    <label for="boxType">Select Box Type:</label>
+    <select id="boxType">
+        <option value="small">Small Box</option>
+        <option value="medium">Medium Box</option>
+        <option value="large">Large Box</option>
+    </select>
+
+    <button type="button" id="checkCapacityBtn">Check Capacity</button>
+
+    <p id="capacityResult"></p>
+<br><br>
+
+    <label for="boxAvail">How Many Boxes do you need for:</label><p id="boxTypeval"></p>
+
+    <input type="text" id="availability"></input>
+
+    <button type="button" id="checkAvailabilityBtn">Check Availability</button>
+
+    <p id="availabilityResult"></p>
+
+
+
+
+
+
+    <h1>Storage Log</h1>
+    
+    <ul id="storageLog">
+        <!-- Log entries will be added here dynamically -->
+    </ul>
+</body>
+    <script src="script.js"></script>
+</html>
